@@ -5,6 +5,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import NavBar from './NavBar'
 import { Theme } from '@radix-ui/themes';
+import { AiFillBug } from "react-icons/ai";
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,6 +24,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" >
+      <head>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/5262/5262375.png" /> 
+      </head>
       <body className={inter.variable}>
       <Theme appearance='light' accentColor="teal">
         <NavBar/>
